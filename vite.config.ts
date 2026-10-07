@@ -28,6 +28,15 @@ const isPagesBuild = process.env.PAGES_BUILD === "1";
 
 export default defineConfig({
   vite: isPagesBuild ? { base: PAGES_BASE } : {},
+  // Outside the Lovable sandbox (e.g. GitHub Actions) nitro defaults to
+  // .output/; pin it to dist/ so the Pages workflow's dist/client path holds.
+  ...(isPagesBuild
+    ? {
+        nitro: {
+          output: { dir: "dist", serverDir: "dist/server", publicDir: "dist/client" },
+        },
+      }
+    : {}),
   tanstackStart: {
     // Redirect TanStack Start's bundled server entry to src/server.ts (our SSR error wrapper).
     // nitro/vite builds from this
