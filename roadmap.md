@@ -7,5 +7,5 @@
 
 # Getting a public address
 
-- [ ] Get the site reachable at a real URL Lisa can share (publish from Lovable, or host the GitHub repo).
-- [ ] Confirm which route she wants before setting anything up.
+- [x] GitHub Pages: fixed the build (output folder mismatch), pushed, and verified lisalangel.github.io/my-portfolio serves all 8 pages.
+- [ ] Lovable publish still available if she wants a Lovable-hosted URL (not requested).

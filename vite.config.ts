@@ -24,7 +24,7 @@ const PAGES_ROUTES = [
 
 // Only the GitHub Actions deploy sets PAGES_BUILD. Lovable's own build ignores
 // this block, so the preview and the published site are unaffected.
-const isPagesBuild = process.env.PAGES_BUILD === "1";
+const isPagesBuild = process.env["PAGES_BUILD"] === "1";
 
 export default defineConfig({
   vite: isPagesBuild ? { base: PAGES_BASE } : {},

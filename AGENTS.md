@@ -15,3 +15,4 @@
 
 - Keep each major portfolio destination as a dedicated TanStack route and source reusable library entries from typed content modules, so the site remains SEO-friendly and content-ready.
 - Store supplied prompt bodies verbatim in the typed library content and render them through a shared detail dialog, so reading and copying use the same source without executing AI calls.
+- GitHub Pages builds only when PAGES_BUILD=1 (subfolder base path, prerendered pages, trailing-slash URLs); keep images bundled from src/assets so they work outside Lovable hosting.

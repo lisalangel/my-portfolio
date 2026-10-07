@@ -46,17 +46,17 @@ function Index() {
           </div>
 
           <h1 className="mt-8 flex flex-col gap-1 md:mt-10 md:gap-2">
-            <span className="font-display text-[2.5rem] font-semibold leading-[1] md:text-6xl md:leading-[0.95] lg:text-[5.4rem]">
+            <span className="font-display text-[2.1rem] font-semibold leading-[1] md:text-[3.25rem] md:leading-[0.95] lg:text-[4.5rem]">
               Big problems.
             </span>
-            <span className="font-display text-[2rem] font-light italic leading-[1.12] md:text-5xl md:leading-[1.1] lg:text-[4.2rem]">
+            <span className="font-display text-[1.7rem] font-light italic leading-[1.12] md:text-[2.7rem] md:leading-[1.1] lg:text-[3.6rem]">
               <span className="whitespace-nowrap">Lots of moving parts.</span>
             </span>
-            <span className="font-display text-[2.5rem] font-semibold leading-[1] md:text-6xl md:leading-[0.95] lg:text-[5.4rem]">
+            <span className="font-display text-[2.1rem] font-semibold leading-[1] md:text-[3.25rem] md:leading-[0.95] lg:text-[4.5rem]">
               <span className="block sm:inline">I make</span>{" "}
               <span className="whitespace-nowrap">complicated work</span>
             </span>
-            <span className="mt-1 font-script text-[2.9rem] font-semibold leading-[1.05] text-primary md:mt-3 md:text-[5rem] md:leading-[0.95] lg:text-[6rem]">
+            <span className="mt-1 font-script text-[2.4rem] font-semibold leading-[1.05] text-primary md:mt-3 md:text-[4.3rem] md:leading-[0.95] lg:text-[5.1rem]">
               a little <span className="whitespace-nowrap">less complicated.</span>
             </span>
           </h1>
