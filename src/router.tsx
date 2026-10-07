@@ -10,6 +10,8 @@ export const getRouter = () => {
     context: { queryClient },
     scrollRestoration: true,
     defaultPreloadStaleTime: 0,
+    // GitHub Pages serves each page as a folder (about/index.html), so its build uses trailing slashes.
+    trailingSlash: import.meta.env.BASE_URL === "/" ? "never" : "always",
   });
 
   return router;

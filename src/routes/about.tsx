@@ -1,6 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
 
-import portraitAsset from "@/assets/lisa-portrait.jpg.asset.json";
+import portraitUrl from "@/assets/lisa-portrait.jpg";
 
 export const Route = createFileRoute("/about")({
   head: () => ({
@@ -65,7 +65,7 @@ function AboutPage() {
           <div className="md:sticky md:top-28 md:self-start">
             <div className="mx-auto aspect-square w-full max-w-sm">
               <img
-                src={portraitAsset.url}
+                src={portraitUrl}
                 alt="Lisa Langel, Senior Technical Program Manager"
                 className="h-full w-full rounded-full object-cover object-center"
               />
