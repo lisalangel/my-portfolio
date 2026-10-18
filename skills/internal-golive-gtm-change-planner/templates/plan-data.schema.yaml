@@ -1,0 +1,24 @@
+# Plan data contract. Monitoring agents compare live signals to these fields.
+# Keep ids stable across versions; revise mode references them.
+plan:
+  id: string            # stable slug
+  version: integer
+  status: DRAFT | APPROVED
+  approved_by: string   # role, set by a human
+  tool: string
+  tool_type: erp | crm | hris | itsm | collaboration | dev_tooling | security | platform | ai | other
+  magnitude: {replacing: bool, mandatory: bool, workflow_changing: bool, ai: bool}
+  tier: T1 | T2 | T3
+  go_live: date
+segments:   [{id, name, size, owner_role, waves: [wave_id]}]
+waves:      [{id, segments: [id], start: date, entry_criteria: [gate_id], exit_gate: gate_id}]
+phases:     [{id, name, start: date, end: date, owner_role, exit_criteria: [string]}]
+gates:      [{id, name, date, decision_owner, criteria: [{metric_id, op: ">=|<=|==", value}]}]
+metrics:    [{id, name, type: leading | lagging | outcome, source, definition, baseline, target, threshold: {op, value, window}, segment: id|all, estimate: bool}]
+signals:    [{id, source, query_or_channel, maps_to: [metric_id | risk_id], privacy: aggregate_only}]
+            # source: manual for checks no system can see (sponsor attendance, kit opens). Add cadence and owner_role.
+            # Every risk must reference at least one signal id, automated or manual.
+risks:      [{id, title, signal_ids: [id], threshold, mitigation, owner_role, phase, status: open | watch | triggered | closed}]
+comms:      [{id, week: "T-4", audience: segment_id, message, channel, sender_role, owner_role}]
+decisions:  [{id, question, owner_role, due: date, status: open | decided}]
+# Style: flow mappings, one item per line. Data is never abbreviated, even when prose is.
