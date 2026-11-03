@@ -47,17 +47,16 @@ function Index() {
 
           <h1 className="mt-8 flex flex-col gap-1 md:mt-10 md:gap-2">
             <span className="font-display text-[2.1rem] font-semibold leading-[1] md:text-[3.25rem] md:leading-[0.95] lg:text-[4.5rem]">
-              Big problems.
+              Big ideas,
             </span>
             <span className="font-display text-[1.7rem] font-light italic leading-[1.12] md:text-[2.7rem] md:leading-[1.1] lg:text-[3.6rem]">
-              <span className="whitespace-nowrap">Lots of moving parts.</span>
+              <span className="whitespace-nowrap">messy middles,</span>
             </span>
             <span className="font-display text-[2.1rem] font-semibold leading-[1] md:text-[3.25rem] md:leading-[0.95] lg:text-[4.5rem]">
-              <span className="block sm:inline">I make</span>{" "}
-              <span className="whitespace-nowrap">complicated work</span>
+              and
             </span>
             <span className="mt-1 font-script text-[2.4rem] font-semibold leading-[1.05] text-primary md:mt-3 md:text-[4.3rem] md:leading-[0.95] lg:text-[5.1rem]">
-              a little <span className="whitespace-nowrap">less complicated.</span>
+              making things <span className="whitespace-nowrap">happen.</span>
             </span>
           </h1>
 
@@ -69,18 +68,28 @@ function Index() {
                 Hi, I’m Lisa!
               </p>
               <p className="max-w-xl text-lg leading-8 text-muted-foreground">
-                I’m a Technical Program Manager. I like figuring out complicated things, connecting
-                dots, and making sense of the project and people chaos when there are approximately
-                47 people, 12 dependencies, and one very important deadline involved.
+                I’m a Technical Program Manager with 12+ years of experience turning big ideas into
+                real results. People, moving pieces, tricky dependencies, and a deadline to keep
+                things interesting? That’s my specialty.
               </p>
               <p className="max-w-xl text-lg leading-8 text-muted-foreground">
-                I’m curious about AI, how teams actually get things done, and why so many processes
-                are harder than they need to be.
+                Lately, I’ve been diving deeper into AI and asking why so many things are more
+                complicated than they need to be (and how we can make them simpler).
               </p>
               <div className="flex flex-col gap-6 xl:flex-row xl:items-end xl:gap-8">
                 <p className="max-w-md text-lg leading-8 text-muted-foreground">
-                  This is where I’m keeping track of what I’m learning, building, and thinking about
-                  along the way.
+                  I started{" "}
+                  <a
+                    href="https://lisasd.substack.com/?utm_campaign=profile_chips"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="font-semibold text-primary-ink underline underline-offset-4 hover:text-primary"
+                  >
+                    this Substack
+                  </a>{" "}
+                  as a place to share what I’m learning, experimenting with, and figuring out along
+                  the way. A little curiosity, a few lessons learned, and hopefully some ideas worth
+                  sharing.
                 </p>
                 <Button asChild size="lg" className="w-fit shrink-0 rounded-sm shadow-none xl:mb-1">
                   <Link to="/prompt-library">
