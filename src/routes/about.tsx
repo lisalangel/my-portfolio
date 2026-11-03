@@ -84,20 +84,37 @@ function AboutPage() {
             </p>
             <div className="mt-8 space-y-6 leading-7 text-muted-foreground">
               <p>
-                I’m a Senior Technical Program Manager who loves solving messy problems, learning
-                new things, and turning ideas into experiences people can actually use.
+                I’m a Technical Program Manager with 12+ years of experience turning big ideas into
+                real results. What I love most? Bringing great people together, tackling interesting
+                challenges, and building things that make a difference.
               </p>
               <p>
-                I’m also interested in the systems behind good program management: how teams
-                communicate, make decisions, track progress, and stay aligned as a program grows. I
-                tend to notice where a process isn't working, where information gets lost, or where
-                teams are solving the same problem in different ways. Then I look for a better way
-                to structure it.
+                I feel right at home when there’s a complex problem to solve, a team to bring
+                together, and an idea worth bringing to life. There’s nothing quite like seeing
+                something go from “what if?” to “we actually built that!”
+              </p>
+              <p>
+                People, moving pieces, tricky dependencies, and a deadline to keep things
+                interesting? That’s my specialty.
+              </p>
+              <p>
+                Lately, I’ve been diving deeper into AI, exploring new ways of working, and asking
+                why so many things are more complicated than they need to be (and how we can make
+                them simpler).
               </p>
               <p className="border-l-2 border-primary pl-6 text-foreground">
-                I’ve been spending a lot of time exploring AI and what it can change about the way
-                we work. I like experimenting, learning what works, and, ideally, shipping something
-                along the way.
+                I started my own Substack,{" "}
+                <a
+                  href="https://lisasd.substack.com/?utm_campaign=profile_chips"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="font-semibold text-primary-ink underline underline-offset-4 hover:text-primary"
+                >
+                  Work in Progress
+                </a>
+                , as a place to share what I’m learning, experimenting with, and figuring out along
+                the way. A little curiosity, a few lessons learned, and
+                hopefully some ideas worth sharing.
               </p>
             </div>
           </div>
