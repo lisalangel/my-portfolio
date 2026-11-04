@@ -80,16 +80,16 @@ export function SiteFooter() {
           <div>
             <p className="flex max-w-3xl flex-col font-display leading-[1.3]">
               <span className="text-xl font-semibold md:text-[1.4rem]">
-                Be curious, learn new things,
+                Stay curious. Keep learning.
               </span>
               <span className="text-xl font-light italic text-background/80 md:text-[1.4rem]">
-                solve messy problems,
+                Solve interesting problems.
               </span>
               <span className="text-xl font-semibold md:text-[1.4rem]">
-                make ideas become real things people can actually use.
+                Build things that matter.
               </span>
               <span className="font-script text-3xl font-semibold leading-none text-primary md:text-4xl">
-                repeat
+                Repeat.
               </span>
             </p>
           </div>

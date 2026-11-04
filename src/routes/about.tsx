@@ -96,13 +96,14 @@ function AboutPage() {
                 something go from “what if?” to “we actually built that!”
               </p>
               <p>
-                People, moving pieces, tricky dependencies, and a deadline to keep things
+                People, moving parts, tricky dependencies, and a deadline to keep things
                 interesting? That’s my specialty.
               </p>
               <p>
-                Lately, I’ve been diving deeper into AI, exploring new ways of working, and asking
-                why so many things are more complicated than they need to be (and how we can make
-                them simpler).
+                I’m excited about AI and all the possibilities it opens up for how we work and
+                what we can build. I am always learning and love experimenting with new ideas,
+                challenging the way things have always been done, and finding smarter, simpler
+                ways to get things done.
               </p>
               <p className="border-l-2 border-primary pl-6 text-foreground">
                 I started my own Substack,{" "}
