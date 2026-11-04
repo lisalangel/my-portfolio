@@ -3,6 +3,8 @@ import { ArrowRight, Blocks, BrainCircuit, CircleDotDashed } from "lucide-react"
 
 import { Button } from "@/components/ui/button";
 import { ArrowLink } from "@/components/site-shell";
+import { Reveal } from "@/components/reveal";
+import { LookPortrait } from "@/components/look-portrait";
 
 // Set to true to bring back the "Featured work" band on the homepage once
 // case studies and playbooks have real content to show.
@@ -38,7 +40,7 @@ function Index() {
     <>
       <section className="overflow-hidden border-b border-border">
         <div className="mx-auto max-w-7xl px-5 pb-16 pt-12 md:pb-24 md:pt-20 lg:px-8">
-          <div className="flex items-center gap-3">
+          <div className="hero-rise flex items-center gap-3">
             <span className="size-2.5 shrink-0 rounded-full bg-primary" />
             <span className="font-mono text-[11px] uppercase tracking-[0.18em] text-muted-foreground md:text-xs">
               AI Program Management · Enterprise AI
@@ -46,35 +48,70 @@ function Index() {
           </div>
 
           <h1 className="mt-8 flex flex-col gap-1 md:mt-10 md:gap-2">
-            <span className="font-display text-[2.1rem] font-semibold leading-[1] md:text-[3.25rem] md:leading-[0.95] lg:text-[4.5rem]">
+            <span
+              className="hero-rise font-display text-[2.1rem] font-semibold leading-[1] md:text-[3.25rem] md:leading-[0.95] lg:text-[4.5rem]"
+              style={{ animationDelay: "70ms" }}
+            >
               Big ideas,
             </span>
-            <span className="font-display text-[1.7rem] font-light italic leading-[1.12] md:text-[2.7rem] md:leading-[1.1] lg:text-[3.6rem]">
+            <span
+              className="hero-rise font-display text-[1.7rem] font-light italic leading-[1.12] md:text-[2.7rem] md:leading-[1.1] lg:text-[3.6rem]"
+              style={{ animationDelay: "140ms" }}
+            >
               <span className="whitespace-nowrap">messy middles,</span>
             </span>
-            <span className="font-display text-[2.1rem] font-semibold leading-[1] md:text-[3.25rem] md:leading-[0.95] lg:text-[4.5rem]">
+            <span
+              className="hero-rise font-display text-[2.1rem] font-semibold leading-[1] md:text-[3.25rem] md:leading-[0.95] lg:text-[4.5rem]"
+              style={{ animationDelay: "210ms" }}
+            >
               and
             </span>
-            <span className="mt-1 font-script text-[2.4rem] font-semibold leading-[1.05] text-primary md:mt-3 md:text-[4.3rem] md:leading-[0.95] lg:text-[5.1rem]">
+            <span
+              className="hero-rise relative mt-1 w-fit font-script text-[2.4rem] font-semibold leading-[1.05] text-primary md:mt-3 md:text-[4.3rem] md:leading-[0.95] lg:text-[5.1rem]"
+              style={{ animationDelay: "280ms" }}
+            >
               making things <span className="whitespace-nowrap">happen.</span>
+              <svg
+                className="absolute -bottom-1 left-0 h-[0.18em] w-full md:-bottom-2"
+                viewBox="0 0 200 12"
+                fill="none"
+                preserveAspectRatio="none"
+                aria-hidden="true"
+              >
+                <path
+                  d="M3 9 C 40 3, 75 11, 110 6 S 175 4, 197 7"
+                  pathLength={1}
+                  className="draw-line stroke-primary"
+                  strokeWidth={4}
+                  strokeLinecap="round"
+                  style={{ animationDelay: "900ms" }}
+                />
+              </svg>
             </span>
           </h1>
 
-          <div className="mt-12 h-px w-full bg-border md:mt-16" />
+          <div
+            className="hero-rise mt-12 h-px w-full bg-border md:mt-16"
+            style={{ animationDelay: "350ms" }}
+          />
 
-          <div className="mt-12 grid grid-cols-1 md:mt-16 md:grid-cols-12 md:items-end md:gap-8">
-            <div className="space-y-6 md:col-span-8 md:space-y-7 lg:col-span-8 xl:col-span-8">
-              <p className="max-w-xl font-display text-xl font-normal text-foreground md:text-2xl">
-                Hi, I’m Lisa!
-              </p>
+          <div className="mt-12 grid grid-cols-1 md:mt-16 md:grid-cols-[1.618fr_1fr] md:items-end md:gap-8">
+            <div className="hero-rise space-y-6 md:space-y-7" style={{ animationDelay: "420ms" }}>
+              <div className="flex items-center gap-4">
+                <p className="font-script text-3xl font-bold text-foreground md:text-4xl">
+                  Hi, I’m Lisa!
+                </p>
+                <LookPortrait />
+              </div>
               <p className="max-w-xl text-lg leading-8 text-muted-foreground">
                 I’m a Technical Program Manager with 12+ years of experience turning big ideas into
                 real results. People, moving pieces, tricky dependencies, and a deadline to keep
                 things interesting? That’s my specialty.
               </p>
               <p className="max-w-xl text-lg leading-8 text-muted-foreground">
-                Lately, I’ve been diving deeper into AI and asking why so many things are more
-                complicated than they need to be (and how we can make them simpler).
+                I’m especially excited about AI, how it’s changing the way we work, and all the
+                possibilities it opens up. I love experimenting with new ideas, challenging the way
+                things have always been done, and finding smarter, simpler ways to make things happen.
               </p>
               <div className="flex flex-col gap-6 xl:flex-row xl:items-end xl:gap-8">
                 <p className="max-w-md text-lg leading-8 text-muted-foreground">
@@ -98,6 +135,7 @@ function Index() {
                 </Button>
               </div>
             </div>
+            <div className="hidden md:block" aria-hidden="true" />
           </div>
         </div>
       </section>
@@ -121,22 +159,23 @@ function Index() {
               text: "Updates and reviews that make the decision, the tradeoffs, and the ask clear.",
             },
           ].map(({ icon: Icon, label, text }, index) => (
-            <article
+            <Reveal
               key={label}
+              delay={index * 140}
               className="border-b border-background/15 p-7 md:min-h-64 md:border-b-0 md:border-r md:p-9 last:border-r-0"
             >
               <Icon className="size-6 text-primary" />
-              <span className="mt-12 block font-mono text-xs text-background/50">0{index + 1}</span>
+              <span className="mt-12 block font-mono text-xs text-gold">0{index + 1}</span>
               <h2 className="mt-4 font-display text-xl font-normal">{label}</h2>
               <p className="mt-3 text-sm leading-6 text-background/65">{text}</p>
-            </article>
+            </Reveal>
           ))}
         </div>
       </section>
 
       <section className="border-b border-border">
         <div className="mx-auto max-w-7xl px-5 py-16 md:py-24 lg:px-8">
-          <div className="mb-10 flex flex-col justify-between gap-5 md:flex-row md:items-end">
+          <Reveal className="mb-10 flex flex-col justify-between gap-5 md:flex-row md:items-end">
             <div>
               <p className="font-mono text-xs uppercase text-primary-ink">The working library</p>
               <h2 className="mt-4 max-w-2xl font-display text-4xl font-medium md:text-5xl">
@@ -145,8 +184,8 @@ function Index() {
               </h2>
             </div>
             <ArrowLink to="/skills-library">Browse all frameworks</ArrowLink>
-          </div>
-          <div className="grid gap-px border border-border bg-border md:grid-cols-2">
+          </Reveal>
+          <Reveal delay={140} className="grid gap-px border border-border bg-border md:grid-cols-2">
             <Link
               to="/prompt-library"
               className="group bg-background p-7 transition-colors hover:bg-surface md:p-10"
@@ -169,7 +208,7 @@ function Index() {
               </p>
               <ArrowRight className="mt-10 size-5 transition-transform group-hover:translate-x-1" />
             </Link>
-          </div>
+          </Reveal>
         </div>
       </section>
 

@@ -63,11 +63,13 @@ function AboutPage() {
       <section>
         <div className="mx-auto grid max-w-7xl gap-12 px-5 py-16 md:grid-cols-[.55fr_1.45fr] md:py-24 lg:px-8">
           <div className="md:sticky md:top-28 md:self-start">
-            <div className="mx-auto aspect-square w-full max-w-sm">
+            <div className="relative mx-auto aspect-square w-full max-w-sm">
+              <div aria-hidden="true" className="ring-layer -inset-3 opacity-25" />
+              <div aria-hidden="true" className="ring-layer -inset-8 translate-x-3 translate-y-2 opacity-10" />
               <img
                 src={portraitUrl}
                 alt="Lisa Langel, Senior Technical Program Manager"
-                className="h-full w-full rounded-full object-cover object-center"
+                className="relative h-full w-full rounded-full object-cover object-center"
               />
             </div>
           </div>
@@ -173,7 +175,7 @@ function AboutPage() {
                     (last ? "py-8 sm:col-span-2 lg:col-span-3" : "py-5")
                   }
                 >
-                  <span className="font-mono text-xs text-background/40">
+                  <span className="font-mono text-xs text-gold">
                     {String(index + 1).padStart(2, "0")}
                   </span>
                   <span

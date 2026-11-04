@@ -9,3 +9,7 @@
 
 - [x] GitHub Pages: fixed the build (output folder mismatch), pushed, and verified lisalangel.github.io/my-portfolio serves all 8 pages.
 - [ ] Lovable publish still available if she wants a Lovable-hosted URL (not requested).
+
+# Cursor-following portrait
+- [x] Homepage portrait that looks toward the pointer (between "Hi, I'm Lisa!" and bio)
+- [x] Wink click reaction
