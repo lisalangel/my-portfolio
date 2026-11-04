@@ -17,7 +17,6 @@ const PAGES_ROUTES = [
   "/prompt-library",
   "/skills-library",
   "/playbooks",
-  "/case-studies",
   "/substack",
   "/contact",
 ];

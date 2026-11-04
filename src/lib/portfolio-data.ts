@@ -450,7 +450,6 @@ export const navItems = [
   { label: "Prompts", to: "/prompt-library" },
   { label: "Skills", to: "/skills-library" },
   { label: "Playbooks", to: "/playbooks" },
-  { label: "Case studies", to: "/case-studies" },
   { label: "Substack", to: "/substack" },
   { label: "Contact", to: "/contact" },
 ] as const;

@@ -217,12 +217,9 @@ function Index() {
           <div className="mx-auto grid max-w-7xl gap-10 px-5 py-16 md:grid-cols-[1fr_1.4fr] md:py-24 lg:px-8">
             <p className="font-mono text-xs uppercase text-primary-ink">Featured work</p>
             <div>
-              <h2 className="font-display text-4xl font-medium">
-                Case studies and playbooks are in progress.
-              </h2>
+              <h2 className="font-display text-4xl font-medium">Playbooks are in progress.</h2>
               <p className="mt-5 max-w-2xl leading-7 text-muted-foreground">COMING SOON!</p>
               <div className="mt-8 flex flex-wrap gap-6">
-                <ArrowLink to="/case-studies">View case studies</ArrowLink>
                 <ArrowLink to="/playbooks">View playbooks</ArrowLink>
               </div>
             </div>
